@@ -1,0 +1,30 @@
+# Initial Business Questions
+
+## Core Question
+Can document readiness failures be categorized early enough to reduce operational friction for healthcare staff and families?
+
+## Questions for Initial Exploration
+
+1. Which failure type appears most often?
+2. Which trigger events most often expose document problems?
+3. Which failure types are most associated with high staff time impact?
+4. Which scenarios are most likely to create downstream delay?
+5. Which document types appear most vulnerable to confusion?
+6. How often does authority mismatch create delay even when documents exist?
+7. Which cases appear most preventable upstream?
+
+## Initial Hypotheses
+
+- Missing documents will be common, but authority mismatch may create the most confusion.
+- High-urgency events will expose inaccessible or outdated documents more often.
+- A relatively small number of failure patterns may account for a large amount of staff friction.
+- Many document issues are not random; they become visible only at predictable trigger points.
+
+## Why This Is a Business Analysis Project
+
+This project focuses on:
+- failure mode classification
+- process friction
+- workflow timing
+- preventable operational delay
+- structured requirements for future interventions

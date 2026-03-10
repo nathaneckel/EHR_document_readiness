@@ -1,0 +1,13 @@
+event_id,care_setting,trigger_event,failure_type,document_type,decision_urgency,authority_present,authority_verified,accessibility_issue,staff_time_impact,family_confusion_level,downstream_delay,preventable_upstream,notes
+1,hospital,admission,missing_document,healthcare_proxy,high,yes,no,no,high,high,yes,yes,Family believed paperwork existed but could not produce it
+2,rehab,discharge,outdated_or_inaccessible,POA,medium,yes,unclear,yes,medium,medium,yes,maybe,Document existed at home but unavailable during discharge planning
+3,assisted_living,care_plan_change,authority_mismatch,POA,medium,yes,no,no,high,high,yes,yes,Daughter involved but formal authority unclear
+4,hospice,consent,missing_document,DNR,high,yes,unclear,no,high,high,yes,yes,No signed document available at time of care decision
+5,home_health,admission,outdated_or_inaccessible,insurance_card,low,yes,yes,yes,low,low,no,yes,Old card on file created intake confusion
+6,SNF,transfer,authority_mismatch,healthcare_proxy,high,no,unknown,no,high,medium,yes,yes,Receiving team unsure who could authorize transfer details
+7,hospital,emergency_decision,outdated_or_inaccessible,living_will,high,yes,unclear,yes,high,high,yes,maybe,Document mentioned but not retrievable from portal
+8,assisted_living,placement,missing_document,ID,medium,yes,yes,no,medium,medium,yes,yes,Identity document missing during move-in paperwork
+9,rehab,billing,authority_mismatch,facility_form,low,yes,no,no,medium,medium,no,maybe,Signer present but not authorized for financial form
+10,hospice,care_plan_change,outdated_or_inaccessible,MOLST,high,yes,yes,yes,high,medium,yes,yes,Orders available but outdated for current status
+11,hospital,discharge,missing_document,discharge_form,medium,yes,yes,no,medium,low,yes,maybe,Required form not completed before transition
+12,home_health,consent,authority_mismatch,POA,medium,yes,unclear,no,high,high,yes,yes,Siblings disagreed on who could consent
