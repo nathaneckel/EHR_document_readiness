@@ -1,111 +1,114 @@
-## Pilot Experiment
+Exploratory healthcare operations analytics project studying document-readiness failure patterns across care transitions.
 
-This project also accompanies a small real-world experiment to test whether families are willing to proactively review healthcare paperwork before a crisis occurs.
+Healthcare Document Readiness Analysis
+Problem Statement
 
-The goal of the pilot is to observe:
-• demand for proactive document readiness
-• common paperwork failure patterns
-• operational friction points for families and staff
+Healthcare transitions and decision points often require specific paperwork to be available and valid at the exact moment a clinical or administrative decision must be made. When documents are missing, outdated, inaccessible, or legally mismatched with the person present, staff and families may experience delays, confusion, and repeated administrative work.
 
-No private or identifying information is collected or published in this repository.
+These problems are usually handled reactively. This project explores whether document readiness failures can be classified, tracked, and analyzed as operational events rather than treated as isolated paperwork problems.
 
-# Healthcare Document Readiness Analysis
+The goal of this repository is to build a simple dataset structure that models document-readiness failure patterns and enables exploratory analysis of when and how those issues occur.
 
-A small exploratory healthcare operations project focused on one practical question:
+This repository contains only synthetic or illustrative data and does not include protected health information.
 
-**What kinds of paperwork failure create avoidable friction for families, staff, and care transitions?**
+Failure-Type Framework
 
-This project is not legal advice and does not analyze private patient records. It is a framework for studying common **document readiness failure modes** at a systems level.
+This project uses three primary document failure categories.
 
-## Project Goal
+1. Missing Document
 
-The purpose of this project is to model how healthcare paperwork problems can be categorized, tracked, and analyzed as operational failure points.
+A required document is not available at the moment it is needed.
 
-Examples of operational friction may include:
+Examples:
 
-- missing documents when a decision is needed
-- outdated or inaccessible documents
-- authority mismatch between the person present and the person legally authorized
-- repeated staff time spent clarifying the same issues
-- delayed decisions, discharge, or coordination due to document confusion
+healthcare proxy not available at admission
 
-## Why This Matters
+DNR or MOLST form unavailable during urgent care decisions
 
-In many settings, document issues are handled reactively.  
-This project explores whether those issues can be made more visible earlier through simple classification, structured intake, and basic analytics.
+identification or insurance documentation missing during intake
 
-The broader question:
+Operational impact may include delays, additional staff time, and unresolved decision authority.
 
-**Can document readiness be treated as a measurable operations problem rather than a last-minute paperwork scramble?**
+2. Outdated or Inaccessible Document
 
-## Initial Failure Mode Framework
+A document exists but cannot be used effectively at the moment it is required.
 
-This first version uses a simple three-part model:
+Examples:
 
-### 1. Missing Document
-A needed document is not available when a care, discharge, placement, or decision event occurs.
+document stored at home while care occurs elsewhere
 
-### 2. Outdated / Inaccessible Document
-A document exists, but it is old, unclear, unavailable, not present, not retrievable, or functionally unusable in the moment.
+outdated advance directive
 
-### 3. Authority Mismatch
-A family member or participant is involved, but the legal authority, signer status, or decision authority does not align with the actual need.
+records stored in inaccessible systems
 
-## Sample Questions This Project Can Explore
+paper copies not available during care transitions
 
-- Which document failure type appears most often?
-- Which settings appear most vulnerable to document confusion?
-- Which event types trigger the highest rate of readiness failure?
-- Which failure types create the most staff friction?
-- Which issues look preventable upstream?
+Operational impact often includes staff searching for documentation or requesting additional copies.
 
-## Initial Dataset Structure
+3. Authority Mismatch
 
-The starter dataset uses one row per event or observed case pattern.
+The individual present during a decision event may not have the legal authority required for the specific decision.
 
-Example fields:
+Examples:
 
-- event_id
-- care_setting
-- trigger_event
-- failure_type
-- document_type
-- decision_urgency
-- authority_present
-- authority_verified
-- accessibility_issue
-- staff_time_impact
-- family_confusion_level
-- downstream_delay
-- preventable_upstream
-- notes
+family member present but not the legal healthcare proxy
 
-## Current Status
+financial authorization required but different authority holder
 
-This is an early exploratory project intended to demonstrate:
+multiple family members unsure who has decision authority
 
-- business analysis thinking
-- healthcare operations framing
-- dataset design
-- failure mode classification
-- practical analytics structure
+Operational impact may include decision delays or additional verification steps.
 
-## Planned Next Steps
+Dataset Structure
 
-- Add a small synthetic sample dataset
-- Create summary counts by failure type
-- Visualize friction patterns across event types
-- Explore a simple “document readiness risk score”
-- Build a basic dashboard or notebook view
+The dataset models document-readiness events as rows in a table, where each row represents a single operational situation in which paperwork issues appeared.
 
-## Files
+Example fields include:
 
-- `data/document_readiness_sample.csv` — starter synthetic dataset
-- `docs/data_dictionary.md` — field definitions
-- `analysis/initial_questions.md` — business questions and hypotheses
-- `visuals/` — charts and screenshots
-- `notebooks/` — exploratory analysis notebook
+Field	Description
+event_id	Unique identifier for each event
+care_setting	Setting where the issue occurred (hospital, rehab, hospice, assisted living, etc.)
+trigger_event	Operational moment where the issue appeared (admission, discharge, transfer, consent, etc.)
+failure_type	Category of document readiness failure
+document_type	Type of document involved (POA, MOLST, insurance card, etc.)
+decision_urgency	Urgency level of the situation
+authority_present	Whether a decision-maker was present
+authority_verified	Whether authority could be confirmed
+accessibility_issue	Whether the document existed but could not be accessed
+staff_time_impact	Estimated operational burden
+family_confusion_level	Observed confusion level among participants
+downstream_delay	Whether the issue caused a delay
+preventable_upstream	Whether the issue appears preventable before the event
+notes	Additional context about the situation
 
-## Disclaimer
+This structure allows exploration of patterns across different care settings and event types.
 
-This repository uses synthetic / illustrative structures only and is intended for operational analysis and portfolio demonstration. It does not contain protected health information.
+Example Analysis Questions
+
+This dataset structure allows several types of exploratory questions.
+
+Examples include:
+
+Failure Pattern Questions
+
+Which failure type occurs most frequently?
+
+Which document types appear most vulnerable to failure?
+
+Which care settings experience the most document readiness problems?
+
+Operational Impact Questions
+
+Which failure types correlate with the highest staff time burden?
+
+Which events most often lead to downstream delays?
+
+Which scenarios create the highest family confusion levels?
+
+Preventability Questions
+
+Which document failures appear most preventable upstream?
+
+Are certain trigger events predictable points where readiness failures emerge?
+
+Do certain document types consistently cause problems during transitions?
