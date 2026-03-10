@@ -1,3 +1,14 @@
+## Pilot Experiment
+
+This project also accompanies a small real-world experiment to test whether families are willing to proactively review healthcare paperwork before a crisis occurs.
+
+The goal of the pilot is to observe:
+• demand for proactive document readiness
+• common paperwork failure patterns
+• operational friction points for families and staff
+
+No private or identifying information is collected or published in this repository.
+
 # Healthcare Document Readiness Analysis
 
 A small exploratory healthcare operations project focused on one practical question:
