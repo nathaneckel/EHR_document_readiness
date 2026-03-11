@@ -18,7 +18,7 @@ This repository **contains only synthetic or illustrative data** and **does not 
 
 This project uses three primary document failure categories.
 
-1. Missing Document
+#### 1. Missing Document
 
 A required document is not available at the moment it is needed.
 
@@ -32,7 +32,7 @@ identification or insurance documentation missing during intake
 
 Operational impact may include delays, additional staff time, and unresolved decision authority.
 
-2. Outdated or Inaccessible Document
+#### 2. Outdated or Inaccessible Document
 
 A document exists but cannot be used effectively at the moment it is required.
 
@@ -48,7 +48,7 @@ paper copies not available during care transitions
 
 Operational impact often includes staff searching for documentation or requesting additional copies.
 
-3. Authority Mismatch
+#### 3. Authority Mismatch
 
 The individual present during a decision event may not have the legal authority required for the specific decision.
 
@@ -98,7 +98,7 @@ This dataset structure allows several types of exploratory questions.
 
 Examples include:
 
-### Failure Pattern Questions
+#### Failure Pattern Questions
 
 Which failure type occurs most frequently?
 
@@ -106,7 +106,7 @@ Which document types appear most vulnerable to failure?
 
 Which care settings experience the most document readiness problems?
 
-### Operational Impact Questions
+#### Operational Impact Questions
 
 Which failure types correlate with the highest staff time burden?
 
@@ -114,7 +114,7 @@ Which events most often lead to downstream delays?
 
 Which scenarios create the highest family confusion levels?
 
-### Preventability Questions
+#### Preventability Questions
 
 Which document failures appear most preventable upstream?
 
