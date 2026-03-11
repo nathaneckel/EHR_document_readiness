@@ -86,13 +86,19 @@ notes	Additional context about the situation
 
 This structure allows exploration of patterns across different care settings and event types.
 
+### Observation Files
+
+The observation files in the `observations/` directory represent individual document-readiness events.
+
+The first few observations currently contain **synthetic example cases used to illustrate the structure of the dataset**. These will be replaced or supplemented with real-world observations over time.
+
 ## Example Analysis Questions
 
 This dataset structure allows several types of exploratory questions.
 
 Examples include:
 
-Failure Pattern Questions
+### Failure Pattern Questions
 
 Which failure type occurs most frequently?
 
@@ -100,7 +106,7 @@ Which document types appear most vulnerable to failure?
 
 Which care settings experience the most document readiness problems?
 
-Operational Impact Questions
+### Operational Impact Questions
 
 Which failure types correlate with the highest staff time burden?
 
@@ -108,7 +114,7 @@ Which events most often lead to downstream delays?
 
 Which scenarios create the highest family confusion levels?
 
-Preventability Questions
+### Preventability Questions
 
 Which document failures appear most preventable upstream?
 
