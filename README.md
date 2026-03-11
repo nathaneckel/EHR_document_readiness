@@ -3,7 +3,7 @@ Exploratory healthcare operations analytics project studying document-readiness 
 Healthcare Document Readiness Analysis
 Problem Statement
 
-Healthcare transitions and decision points often require specific paperwork to be available and valid at the exact moment a clinical or administrative decision must be made. When documents are missing, outdated, inaccessible, or legally mismatched with the person present, staff and families may experience delays, confusion, and repeated administrative work.
+Healthcare transitions and decision points often require specific paperwork to be available and valid at the exact moment a clinical or administrative decision must be made. **When documents are missing, outdated, inaccessible, or legally mismatched with the patient present, staff and families may experience delays, confusion, unexpected expense / insurance complications and repeated administrative work.**
 
 These problems are usually handled reactively. This project explores whether document readiness failures can be classified, tracked, and analyzed as operational events rather than treated as isolated paperwork problems.
 
