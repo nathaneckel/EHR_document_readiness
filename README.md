@@ -1,9 +1,8 @@
-Exploratory healthcare operations analytics project studying document-readiness failure patterns across care transitions.
+# Document Readiness Before Crisis
 
-Healthcare Document Readiness Analysis
-Problem Statement
+Healthcare transitions and care decisions often require specific documents to be available and **legally valid at the exact moment a clinical or administrative decision must be made**.
 
-Healthcare transitions and care decisions often require specific documents to be available and legally valid at the exact moment a clinical or administrative decision must be made. **When documents are missing, outdated, inaccessible, or legally mismatched with the patient present, staff and families may experience delays, confusion, unexpected expenses or insurance complications, and repeated administrative work.**
+When documents are missing, outdated, inaccessible, or legally mismatched with the patient present, staff and families may experience delays, confusion, unexpected expenses, insurance complications, and repeated administrative work.
 
 These failures are rarely studied as a system problem, but they appear repeatedly during hospital admissions, assisted living transitions, and other healthcare decision points.
 
