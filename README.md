@@ -90,6 +90,8 @@ This structure allows exploration of patterns across different care settings and
 
 The observation files in the `observations/` directory represent individual document-readiness events.
 
+Observations are derived from publicly shared caregiver discussions and anecdotal reports. Personal details are removed to preserve privacy.
+
 The first few observations currently contain **synthetic example cases used to illustrate the structure of the dataset**. These will be replaced or supplemented with real-world observations over time.
 
 ## Example Analysis Questions
