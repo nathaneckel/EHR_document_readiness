@@ -1,0 +1,154 @@
+# Document Failure Map of Healthcare
+EHR Document Readiness Project
+
+Core Thesis
+-----------
+"Intake accepts documents. Discharge tests them."
+
+Healthcare institutions typically collect legal authority documents administratively during intake.
+However, the validity and operational usability of those documents are often only discovered later
+during treatment decisions or discharge coordination.
+
+This creates a structural failure gap in the system.
+
+
+====================================================
+LAYER 1 — HEALTHCARE PROCESS FLOW
+====================================================
+
+Family Preparation
+        ↓
+Facility Intake
+        ↓
+Administrative Document Capture
+        ↓
+Treatment Decision Point
+        ↓
+Discharge Coordination
+        ↓
+Post-Care Placement / Facility Transfer
+
+
+====================================================
+LAYER 2 — ESCALATION TIMELINE (T0–T8)
+====================================================
+
+T0  Assumed Readiness
+    Family believes documents exist and are valid.
+
+T1  Intake Collection
+    Facility requests and receives documents.
+
+T2  Administrative Capture
+    Documents scanned or stored in records.
+
+T3  Authority Assumed Valid
+    Staff assumes documents will work if needed.
+
+T4  Authority Required
+    Treatment decision requires legal authority.
+
+T5  Authority Questioned
+    Staff begins questioning authority validity.
+
+T6  Discharge Coordination
+    Legal authority required for placement or transfer.
+
+T7  Authority Conflict
+    Family members or institutions dispute authority.
+
+T8  Legal Escalation
+    Guardianship proceedings or legal intervention.
+
+
+====================================================
+LAYER 3 — FAILURE CAUSE FRAMEWORK (F1–F7)
+====================================================
+
+F1  Missing Document
+    Required authority document does not exist.
+
+F2  Wrong Authority Type
+    Medical vs financial authority mismatch.
+
+F3  Expired or Outdated Document
+    Document no longer legally valid.
+
+F4  Document Inaccessible
+    Original cannot be located or produced.
+
+F5  Conflicting Authority
+    Multiple individuals claim decision authority.
+
+F6  Jurisdiction Mismatch
+    Document not valid across state or institutional rules.
+
+F7  Institutional Rejection
+    Hospital or facility refuses to accept document.
+
+
+====================================================
+LAYER 4 — OPERATIONAL CONSEQUENCES (C1–C5)
+====================================================
+
+C1  Communication Blocked
+    Staff cannot legally speak with family member.
+
+C2  Consent Delay
+    Treatment or medical decisions delayed.
+
+C3  Discharge Delay
+    Patient cannot be transferred or released.
+
+C4  Family Conflict
+    Disputes escalate between relatives.
+
+C5  Legal Escalation
+    Court or guardianship intervention required.
+
+
+====================================================
+ANALYTICAL MODEL
+====================================================
+
+Each documented case in the dataset is classified using three dimensions:
+
+T-stage  → When the failure became visible
+F-type   → Why the document failed
+C-outcome → What operational damage occurred
+
+
+Example Case Classification
+---------------------------
+
+Case #014
+
+T6  Discharge Coordination
+F4  Document Inaccessible
+C3  Discharge Delay
+
+
+Interpretation
+--------------
+The document failure was discovered during discharge planning because
+the required document could not be produced, resulting in discharge delay.
+
+
+====================================================
+PROJECT PURPOSE
+====================================================
+
+The EHR Document Readiness dataset aims to measure:
+
+1. How often authority documents fail during care transitions
+2. What mechanisms cause the failures
+3. What operational damage those failures create
+
+Initial dataset target:
+200 documented public cases (Reddit, caregiver forums, public discussions).
+
+The dataset will allow analysis of:
+
+• where failures are discovered
+• what causes them
+• how severe the operational impact becomes
