@@ -4,15 +4,17 @@ Healthcare transitions and care decisions often require specific documents to be
 
 When documents are **missing, outdated, inaccessible, or legally mismatched with the patient present,** staff and families may experience **delays, confusion, unexpected expenses, insurance complications, and repeated administrative work.**
 
+In this repository, these events are treated as **document-readiness failures.**
+
 These failures are rarely studied as a system problem, but they appear repeatedly during hospital admissions, assisted living transitions, and other healthcare decision points.
 
 These problems are usually handled reactively. This project explores whether document readiness failures can be classified, tracked, and analyzed as operational events rather than treated as isolated paperwork problems.
 
-The goal of this repository is to build a simple dataset structure that models document-readiness failure patterns and enables exploratory analysis of when and how those issues occur.
+The goal of this repository is to build a simple dataset structure that models document-readiness failure patterns and enables exploratory analysis of when and how they occur.
 
-This repository contains only synthetic or illustrative data and does not include protected health information.
+This repository **contains only synthetic or illustrative data** and **does not include protected health information.**
 
-Failure-Type Framework
+## Failure-Type Framework
 
 This project uses three primary document failure categories.
 
@@ -60,7 +62,7 @@ multiple family members unsure who has decision authority
 
 Operational impact may include decision delays or additional verification steps.
 
-Dataset Structure
+## Dataset Structure
 
 The dataset models document-readiness events as rows in a table, where each row represents a single operational situation in which paperwork issues appeared.
 
@@ -84,7 +86,7 @@ notes	Additional context about the situation
 
 This structure allows exploration of patterns across different care settings and event types.
 
-Example Analysis Questions
+## Example Analysis Questions
 
 This dataset structure allows several types of exploratory questions.
 
