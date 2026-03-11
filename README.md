@@ -14,6 +14,15 @@ The goal of this repository is to build a simple dataset structure that models d
 
 This repository **contains only synthetic or illustrative data** and **does not include protected health information.**
 
+## Core Operational Insight
+
+Healthcare systems routinely collect documents during intake,
+but those documents are often only tested operationally during
+care decisions or discharge planning.
+
+This project studies document-readiness failures that emerge
+between those two stages.
+
 ## Failure-Type Framework
 
 This project uses three primary document failure categories.
